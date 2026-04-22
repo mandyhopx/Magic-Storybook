@@ -1,0 +1,6 @@
+{
+  "name": "Magic Storybook",
+  "description": "An AI-powered interactive storybook for kids that generates personalized stories, reads them aloud, and creates magical illustrations for every page.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Story Generation", "AI Illustration", "Text-to-Speech"]
+}

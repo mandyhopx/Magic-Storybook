@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+@layer components {
+  .btn-bubble {
+    @apply border-4 border-black transition-none;
+    box-shadow: 0 8px 0 var(--bubble-shadow, #D4A017);
+  }
+  .btn-bubble:active {
+    @apply translate-y-[4px];
+    box-shadow: 0 4px 0 var(--bubble-shadow, #D4A017);
+  }
+  .btn-bubble-red {
+    @apply bg-[#FF7675];
+    --bubble-shadow: #D63031;
+  }
+  .btn-bubble-teal {
+    @apply bg-[#55E6C1];
+    --bubble-shadow: #10AC84;
+  }
+  .btn-bubble-yellow {
+    @apply bg-[#F1C40F];
+    --bubble-shadow: #D4A017;
+  }
+  .btn-bubble-white {
+    @apply bg-white;
+    --bubble-shadow: #B2BEC3;
+  }
+}
+
+.ground {
+  background: #78E08F;
+  border-radius: 50% 50% 0 0;
+}
+
+.illustration-canvas {
+  background: linear-gradient(180deg, #87CEEB 0%, #E0F7FA 100%);
+}
